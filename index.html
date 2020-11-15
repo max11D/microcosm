@@ -23,13 +23,19 @@
 
       gtag('config', 'G-25FSRB7QDG');
     </script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementsByClassName("burger-menu")[0].classList.toggle("open");
+        }
+    </script>
 </head>
 
 <style>
     img.cover-image {
         width: 100%;
-        margin-top: -110px;
-        margin-bottom: -80px;
+        margin-top: -30%;
+        margin-bottom: -15%;
     }
 
     div.cover-image {
@@ -45,26 +51,47 @@
     footer {
         border-top: 1px solid #F9F4F0;
     }
+
+    @media (min-width: 768px) {
+        .landing-block {
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, 0);
+            background-color: rgba(0,0,0,0.66);
+            padding: 0 1em 1em;
+            border-radius: 2px;
+            box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.5);
+        }
+    }
     
+    @media (min-width: 990px) {
+        .landing-block {
+            top: 44%;
+        }
+    }
 </style>
 
 <body id="body">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-        <header class="App-header">Microcosm</header>
+        <header class="App-header"><div class="inner-header"><img class="burger-menu-icon" alt="hamburger menu icon" src="/icons/burger-menu.png" onClick="toggleMenu()">Microcosm</div></header>
+        <div class="burger-menu "><a class="burger-menu" href="/">Home</a><a class="burger-menu" href="/restaurants/search">Browse Restaurants</a><a class="burger-menu indent" href="/restaurants/search?accessibility=fully">Fully Accessible</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Vegetarian">Vegetarian</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Vegan">Vegan</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Halal">Halal</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Kosher">Kosher</a><a class="burger-menu" href="/about">About the Project</a><a class="burger-menu" href="/about#grades">About the Grades</a><a class="burger-menu" href="/contact">Contact</a><a class="burger-menu" href="https://www.instagram.com/microcosm.nyc">Instagram</a></div>
         <div class="cover-image"><img class="cover-image" src="./images/cover.jpg"
                 alt="Child looking up at a fountain statue of the world" /></div>
     </div>
-    <p>
-        <b>
-            A curated but down-to-earth guide to <br>New York City's
-            vibrant food cultures.
-        </b>
-    </p>
-    <a href="./find-some-food" class="button orange">find some food</a>
-    <br>
-    <br>
-    <a href="./about" style="color: #F9F4F0">learn about the project</a>
+    <div className="landing-block">
+        <p>
+            <b>
+                A curated but down-to-earth guide to <br>New York City's
+                vibrant food cultures.
+            </b>
+        </p>
+        <a href="./find-some-food" class="button orange">find some food</a>
+        <br>
+        <br>
+        <a href="./about" style="color: #F9F4F0">learn about the project</a>
+    </div>
     <footer>
         <div class="built-in-queens">Built in Queens</div>
         <p class="footer"><a href="/about">Learn about the project</a></p>
