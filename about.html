@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport"
+        content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=device-dpi">
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="A curated guide to food in the outer boroughs of New York City" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Microcosm</title>
+    <link rel="stylesheet" href="https://use.typekit.net/azc7bjs.css">
+    <link href="/static/css/main.33c1b9eb.chunk.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-25FSRB7QDG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-25FSRB7QDG');
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementsByClassName("burger-menu")[0].classList.toggle("open");
+        }
+    </script>
+</head>
+
+<style>
+    body#body {
+        /*text-align: center;*/
+    }
+
+    footer {
+        border-top: 1px solid #F9F4F0;
+    }
+
+    @media (min-width: 768px) {
+    }
+    
+    @media (min-width: 990px) {
+    }
+</style>
+
+<body id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <header class="App-header"><div class="inner-header"><img class="burger-menu-icon" alt="hamburger menu icon" src="/icons/burger-menu.png" onClick="toggleMenu()">Microcosm</div></header>
+        <div class="burger-menu "><a class="burger-menu" href="/">Home</a><a class="burger-menu" href="/restaurants/search">Browse Restaurants</a><a class="burger-menu indent" href="/restaurants/search?accessibility=fully">Fully Accessible</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Vegetarian">Vegetarian</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Vegan">Vegan</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Halal">Halal</a><a class="burger-menu indent" href="/restaurants/search?dietaryRestrictions=Kosher">Kosher</a><a class="burger-menu" href="/about">About the Project</a><a class="burger-menu" href="/about#grades">About the Grades</a><a class="burger-menu" href="/contact">Contact</a><a class="burger-menu" href="https://www.instagram.com/microcosm.nyc">Instagram</a></div>
+    </div>
+    <div class="content-block">
+        <h1>About the Project</h1>
+        <h2>What is Microcosm?</h2>
+        <p>
+            Microcosm is a curated guide to good - I might even claim "the best" - food in Queens (for now). In addition to the typical ratings and categorization, we also list restaurants' accessibility and accomodation of dietary needs.
+        </p>
+        <h2>What is it not?</h2>
+        <p>
+            Microcosm is not comprehensive or necessarily even objective. The database is compiled from a limited number of people's personal experiences, and so it will reflect our personal preferences and biases. However, we are cognizant of this and are always trying to broaden our knowledge! If you have recommendations or input, <a href="/contact">drop us a comment.</a>
+        </p>
+        <h2 id="grades">What do the grades mean?</h2>
+        <p>
+            The grading system is broadly similar to a certain other three-star guide. 3 star establishments are places worth a dedicated trip; 2 star establishments are worth a detour; and 1 star establishments are for if you're in the area. That said, all establishments listed on Microcosm are excellent!
+        </p>
+    </div>
+    <footer>
+        <div class="built-in-queens">Built in Queens</div>
+        <p class="footer"><a href="/about">Learn about the project</a></p>
+        <p class="footer">Follow us on Instagram <a href="https://www.instagram.com/microcosm.nyc">@microcosm.nyc</a>
+        </p>
+        <div class="copyrights">
+            <p class="footer">
+                Website (c) <a href="https://maksim.nyc">Maksim Mikityanskiy</a> 2020<br>Other content
+                property of respective<br>copyright holders
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
